@@ -16,6 +16,8 @@ def can_climb(has_helmet: bool, has_rope: bool):
     else:
         print("Uh oh! You're not ready to climb yet.")
         return False
+    
+    #OR return has_helmet and has_rope
 
 
 def red_light_camera(light_colour: str, car_detected: bool):
@@ -37,7 +39,8 @@ def red_light_camera(light_colour: str, car_detected: bool):
     else:
         print("No red light ticket to be issued.")
         return False
-
+    
+    # OR return light_colour == "Red" and car_detected
 
 def can_ride_rollercoaster(rider_height: float):
     """Only people who are over 120cm in height can ride the rollercoaster.
@@ -53,7 +56,8 @@ def can_ride_rollercoaster(rider_height: float):
     else:
         print("I'm sorry, you cannot ride today.")
         return False
-
+    
+    # OR return rider_height > 120
 
 def login(password: str):
     """Only users who enter the password "quartzgleam?1" can log in successfully.
@@ -71,4 +75,6 @@ def login(password: str):
     else:
         print("I'm sorry, that's the wrong password. Please try again.")
         return False
+    
+    # OR return password == "quartzgleam?1"
 
